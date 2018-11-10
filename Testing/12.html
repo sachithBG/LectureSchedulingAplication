@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>shake demo</title>
+    <body>
+    <div class="form-group has-feedback">
+        <input type="text" class="form-control form-control-lg"  placeholder="National ID" id="nids" maxlength="11"
+               data-for="NID" onkeypress="A(this);" pattern="^[0-9]{9}[-][V]$"   required >
+        <span class="glyphicon glyphicon-user form-control-feedback" ></span>
+    </div>
+    <script>
+        function A(ad){
+            $("#nids").notify("EEELAA","success");
+        };
+
+    </script>
+    <script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../js/notify.min.js"></script>
+</body>
+</html>

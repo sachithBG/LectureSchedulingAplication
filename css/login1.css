@@ -1,0 +1,80 @@
+#tropic{
+    background-color: transparent;
+    position: relative;
+    font-size: 30px;
+    color: #6073ff;
+}
+#btnsign1{
+margin-top: 10px;
+}
+#btnsign{
+    float: right;
+    width: 100px;
+}
+div.login-logo a{
+    left: -30px;
+}
+div.login-box-body {
+
+    box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 10.8), 0 6px 20px 0 rgba(0, 0, 0, 10.19);
+    text-align: center;
+    font-size: 17px;
+    position: absolute;
+    right: 620px;
+    background-color: #fdf8ff;
+    color: #0a0a0a;
+
+}
+div.login-box{
+
+    margin-top: 0px;
+}
+div.lockscreen-logo{
+    position: absolute;
+}
+.radio{
+    color: #000001;
+
+}
+.css{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    filter: opacity(70%);
+}
+
+
+.effect5
+{
+    position: relative;
+}
+.effect5:before, .effect5:after
+{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 25px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #0f0f77;
+    -webkit-box-shadow: 0 35px 20px #770003;
+    -moz-box-shadow: 0 35px 20px #770000;
+    box-shadow: 0 35px 20px #207701;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+.effect5:after
+{
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Timetable | Registration Page</title>
+
+  <!-- Tell the browser to be responsive to screen width
+  <script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="../bower_components/jquery/popper.min.js"></script>
+  <link rel="stylesheet" href="../bower_components/bootsrap_new/css/bootstrap.css">
+  -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome-->
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+    <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+    <link rel="stylesheet" href="../bower_components/bootsrap_new/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/register.css">
+
+
+  <!-- iCheck -->
+    <link rel="stylesheet" href="../plugins/iCheck/square/blue.css">
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+</head>
+
+<body class="hold-transition register-page card">
+
+<img src="../images/jack.jpg" class="css card bg-light rounded " >
+<div class=" box card effect5 " ><p>
+    <a href="../index.html" id="tropic" ><b>Welcome </b> <br> Academic Timetable</a></p>
+</div>
+
+<div id="background" class="card form-container">
+
+    <div class="box effect5 "></div>
+<div class="register-box ">
+
+
+    <div class="register-box-body card-body  border-primary bg-light rounded  " id="vib1" content="center" >
+        <div class="box effect5 ">
+    <p class="login-box-msg p-3  bg-light rounded" style="font-size: 18px" >Register a new membership</p>
+        </div>
+    <form action="../app/register.php" method="POST" enctype="application/x-www-form-urlencoded" id="start" onsubmit="return handle_form_submission()" class="was-validated">
+     <div class="container-fluid" id="123">
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control form-control-lg"  placeholder="National ID" name="NID" id="nid" maxlength="11"
+                   data-for="NID" onkeyup="Validate1(this);" pattern="^[0-9]{9}[-][V]$"  required >
+            <span class="glyphicon glyphicon-user form-control-feedback" id="spnNID"></span>
+        </div>
+         <div class="form-group has-feedback">
+        <input type="text" class="form-control form-control-lg" placeholder="Full name" name="Name" id="name"  data-for="name"  required>
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+      </div>
+
+      <div class="form-group has-feedback">
+        <input type="email" class="form-control form-control-lg" placeholder="Email" name="Email" id="email" data-for="Email" required>
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control form-control-lg" placeholder="Password" name="Password1" id="pwd1" data-for="Password1"
+               onkeyup="validatePWD1()" required>
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control form-control-lg" placeholder="Retype password" name="Password2" id="pwd2" data-for="Password2"
+               onkeyup="validatePWD2()" required>
+        <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+      </div>
+
+      <div class="form-group btn-block " style="color: #3a4cb2" id="previlage" name="formgroup">
+        <div class="radio"><span class="row">
+          <label style="margin-left: 15%" >
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="Student" checked  > Student
+          </label>
+          <!--  </div> -->
+          <!--   <div class="radio"> -->
+          <label style="margin-left: 7.8% ;" >
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="Lecture"> Lecture
+          </label></span>
+          <!-- </div> disabled --><span class="row">
+          <label style="margin-left: 15%"x class="row">
+              <input type="radio" name="optionsRadios" id="optionsRadios3" value="Admin" > Admin
+          </label>
+
+            <label style="margin-left: 16%">
+                <input type="radio" name="optionsRadios" id="optionsRadios4" value="other" disabled > this is disabled
+            </label></span>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-xs-8">
+              <div class="custom-control custom-checkbox mb-2">
+                  <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                  <label class="custom-control-label text-sm-center checkbox" for="customControlValidation1">I agree to the
+                      <a href="#" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">terms</a></label>
+
+              </div>
+          </div>
+
+
+        <!-- /.col -->
+        <div class="col-xs-3" >
+          <button type="submit" class="btn btn-primary btn-lg " id="Register"  data-for="formgroup">Register</button>
+        </div>
+        <!-- /.col -->
+      </div>
+</div>
+    </form>
+
+
+    <div class="social-auth-links text-center ">
+      <p>- OR -</p>
+      <a href="#" class="btn btn-primary btn-block btn-social btn-facebook  form-control-lg "><i class="fa fa-facebook"></i> Sign up using
+        Facebook</a>
+      <a href="#" class="btn btn-google btn-block btn-social form-control-lg" id="Gle"><i class="fa fa-google-plus"></i> Sign up using
+        Google+</a>
+    </div>
+
+    <a href="../index.html" class="text-center " >I already have a membership</a>
+  </div>
+
+  <!-- /.form-box -->
+</div>
+</div>
+<!-- /.register-box -->
+
+<!-- jQuery 3 -->
+<script src="../bower_components/jquery/popper.min.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!--
+<script src="../bower_components/jquery/jquery-3.3.1.slim.min.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js">
+<script src="../bower_components/jquery/jquery.vibrate.min.js"></script></script>
+<script src="../bower_components/jquery/dist/jquery-3.3.1.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../js/successealert.js"></script>
+-->
+<!-- Bootstrap 3.3.7 -->
+<script src="../bower_components/bootsrap_new/js/bootstrap.min.js"></script>
+<!-- iCheck -->
+<script src="../plugins/iCheck/icheck.min.js"></script>
+<script src="../js/notify.min.js"></script>
+<script src="../js/notify.js"></script>
+<script src="../appJs/AllURL.js"></script>
+<script src="../appJs/register.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b33dc23c-4db0-4280-bbff-e2e1d29950af" name="WebServer" url="http://localhost/Document/PHP/LSAplication">
+        <fileTransfer port="0" mountedRoot="C:\xampp\htdocs\Document\PHP\LSAplication" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

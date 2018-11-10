@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<link>
+<head >
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Timetable | Loging Page</title>
+
+  <!-- Tell the browser to be responsive to screen width -->
+
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- Bootstrap 3.3.7 -->
+
+  <link rel="stylesheet" href="bower_components/bootsrap_new/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+    <link rel="stylesheet" href="css/login1.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <link rel="stylesheet" href="bower_components/jquery-ui/jquery-ui.min.css">
+  <![endif]-->
+  <!-- Google Font -->
+<!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+-->
+</head>
+
+
+<body class="hold-transition login-page btn-flat  ">
+<img src="images/ccagdebea_largest.jpg" class="css card "  style="background-color: -moz-mac-accentdarkshadow">
+<div align="center" class=" box effect5  form-container" id="tropic1">
+    <a href="index.html" id="tropic" ><b>Welcome </b> <br>  Academic Timetable </a>
+</div>
+
+  <!-- /.login-logo -->
+  <div class="login-box-body  card ">
+    <p class="login-box-msg" id="session">Sign in to start your session</p>
+
+    <form action="app/login.php" method="post"  class="was-validated" onsubmit="return handle_form_submission()" enctype="application/x-www-form-urlencoded"  >
+      <div class="form-group has-feedback" >
+        <input type="email" class="form-control " placeholder="Email" name="emailLG" id="EmailLG" onkeyup="pressEmail();" required>
+        <span class="glyphicon glyphicon-envelope form-control-feedback" ></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" placeholder="Password" name="passwordLG" id="pwdLG" onkeyup="Validate_lg(this);" required>
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+
+
+        <div  >
+          <div class="checkbox icheck">
+            <label>
+              <input type="checkbox"> Remember Me
+            </label>
+          </div>
+        </div>
+           <!-- /.col <input type = "submit" value = " Submit "/><br />-->
+      <div style="width: 70%" id="btnsign1">
+           <div class="form-group has-feedback" id="btnsign">
+               <button type="submit" value="submit" class="btn btn-primary btn-block  btn-sm " id="signin">Sign In</button>
+             </div>
+      </div>
+        <!-- /.col -->
+
+    </form>
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    <div class="social-auth-links text-center">
+      <p>- OR -</p>
+      <a href="#" class="btn btn-primary btn-block btn-social btn-facebook  form-control-sm "><i class="fa fa-facebook"></i> Sign in using
+        Facebook</a>
+      <a href="#" class="btn btn-google btn-block btn-social form-control-sm"><i class="fa fa-google-plus"></i> Sign in using
+        Google+</a>
+    </div>
+    <!-- /.social-auth-links -->
+
+    <a href="#" style="color: #040027">I forgot my password</a><br>
+    <a href="appPages/register.html" class="text-center" style="color: #0a0a18">Register a new membership</a>
+
+  </div>
+  <!-- /.login-box-body -->
+
+<!-- /.login-box -->
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/popper.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!--<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery/jquery.vibrate.min.js"></script></script>
+-->
+
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- iCheck -->
+<script src="plugins/iCheck/icheck.min.js"></script>
+<script src="js/notify.min.js"></script>
+<script src="appJs/AllURL.js"></script>
+<script src="appJs/logFile.js"></script>
+</body>

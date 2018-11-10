@@ -1,0 +1,93 @@
+
+.css{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    filter: opacity(95%);
+}
+
+body {background: #2dcc1b
+}
+.box {
+    font-size: 30px;
+    background: #fdf8ff;
+
+}
+.box p{
+    text-align:center;
+    position:relative;
+    top:2px;
+}
+
+.effect5
+{
+    position: relative;
+}
+.effect5:before, .effect5:after
+{
+    z-index: -2;
+    position: absolute;
+    content: "";
+    bottom: 40px;
+    left: 30px;
+    width: 60%;
+    top: 60%;
+    max-width:500px;
+    background: #ff0c0e;
+    -webkit-box-shadow: 0 35px 20px #fdf8ff;
+    -moz-box-shadow: 0 35px 20px #fdf8ff;
+    box-shadow: 0 35px 20px #0e18b0;
+    -webkit-transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -o-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+}
+.effect5:after
+{
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
+}
+/*////////////////////////////////////////*/
+
+#tropic{
+    background-color: transparent;
+    position: relative;
+    color: black;
+    left: 10px;
+    alignment: center;
+}
+
+div.register-box-body {
+    left: 625px;
+    filter: opacity(98%);
+    box-shadow: 0 10px 8px 0 rgba(10, 30, 0, 30), 0 8px 25px 5px rgb(244, 239, 555);
+    text-align: center;
+    font-size: 16px;
+    horiz-align: center;
+    position: absolute;
+    vertical-align: center;
+    background-color: #ffffff;
+    color: #0a0a0a;
+
+
+}
+
+div.register-box{
+    margin-top: 0px;
+}
+div.lockscreen-logo{
+    position: absolute;
+}
+.radio{
+    color: #0000cc;
+}
+#background{
+    background-color: rgba(46, 46, 146, 0.28);
+    height: 100%;
+}
